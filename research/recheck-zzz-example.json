@@ -1,0 +1,156 @@
+{
+  "source": "Melty MCP",
+  "checked_at": "2026-10-21",
+  "data": {
+    "slug": "zenless-r-e-p-o",
+    "title": "Zenless R.E.P.O.",
+    "tagline": "WIP — temporarily broken, do not play yet",
+    "creator": "[public creator name omitted]",
+    "games": [
+      "repo",
+      "custom-zenless-zone-zero"
+    ],
+    "version": "0.2.7",
+    "players": 11,
+    "multiplayer": true,
+    "allowRemix": true,
+    "source": null,
+    "remixOf": null,
+    "remixes": 0,
+    "id": "d52938d7-f4fc-4403-a450-c246e24e11ae",
+    "recipe": {
+      "mode": "installed",
+      "test": {
+        "checks": [
+          "zzz-folder",
+          "agent-roster",
+          "agent-kit"
+        ],
+        "minutes": 5
+      },
+      "games": [
+        {
+          "role": "primary",
+          "slug": "repo"
+        },
+        {
+          "role": "companion",
+          "slug": "custom-zenless-zone-zero"
+        }
+      ],
+      "notes": {
+        "firstLaunch": "On the main menu you should see a left SELECT AGENT panel (Unity UI). Pick an Agent, then start a Private Game."
+      },
+      "launch": {
+        "cwd": "{game}",
+        "env": {
+          "ZENREPO_ZZZ": "{game:custom-zenless-zone-zero}"
+        },
+        "kind": "exe",
+        "path": "{game}/REPO.exe"
+      },
+      "mappings": [
+        {
+          "to": "{game}/BepInEx",
+          "from": "BepInEx/",
+          "component": "main"
+        }
+      ],
+      "components": [
+        {
+          "id": "main",
+          "kind": "main",
+          "label": "Main files",
+          "fileName": "ZenRepo-0.2.7.zip",
+          "required": true
+        }
+      ],
+      "multiplayer": {
+        "connect": {
+          "address": {
+            "log": "{localappdata}/ZenRepo/melty.log",
+            "after": "Melty join address: "
+          },
+          "joinFile": {
+            "key": "join",
+            "path": "{localappdata}/ZenRepo/melty.properties"
+          }
+        },
+        "maxPlayers": 4
+      },
+      "runtimeData": [
+        "{localappdata}/ZenRepo"
+      ],
+      "requirements": [
+        {
+          "id": "bepinex-5",
+          "kind": "loader"
+        }
+      ],
+      "schemaVersion": 1
+    },
+    "recipeWithheld": null,
+    "pageUrl": "https://melty.gg/m/zenless-r-e-p-o",
+    "oneClick": {
+      "oneClick": "yes",
+      "needs": [
+        "R.E.P.O.",
+        "Zenless Zone Zero"
+      ],
+      "automatic": [
+        "BepInEx 5 v5.4.23.5: Melty installs it."
+      ],
+      "byHand": [],
+      "someByHand": [],
+      "notes": [
+        "The first launch asks the player for something: \"On the main menu you should see a left SELECT AGENT panel (Unity UI). Pick an Agent, then start a Private Game.\" If that has to be done before the game starts (a second game signing in or downloading itself), put it in recipe.setup: Melty then does it first and waits, so the game never starts without the mashup."
+      ],
+      "blockers": [],
+      "toFinish": []
+    },
+    "outcomes": {
+      "days": 30,
+      "installed": 11,
+      "launched": 19,
+      "failed": 1,
+      "uninstalled": 4,
+      "failures": [
+        {
+          "reason": "download-failed: The download kept dropping (fetch failed: UND_ERR_CONNECT_TIMEOUT; 6 tries).",
+          "count": 1,
+          "lastAt": "2026-10-19T15:02:19.181Z"
+        }
+      ],
+      "plays": [
+        {
+          "version": "0.2.7",
+          "started": 11,
+          "worked": 11,
+          "crashed": 0,
+          "codeSeen": 18
+        }
+      ],
+      "crashes": [],
+      "ratings": {
+        "count": 1,
+        "average": 1,
+        "reasons": {}
+      },
+      "gameVersions": [],
+      "together": {
+        "connects": true,
+        "showsAddress": false,
+        "joinWithoutAddress": false,
+        "games": 19,
+        "hosted": 0,
+        "joiners": 0,
+        "handedAddress": 0,
+        "confirmed": 0,
+        "address": {
+          "log": "{localappdata}/ZenRepo/melty.log",
+          "after": "Melty join address: "
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "source": "Melty MCP",
+  "checked_at": "2026-10-21",
+  "data": {
+    "slug": "custom-zenless-zone-zero",
+    "name": "Zenless Zone Zero",
+    "inCatalog": false
+  },
+  "guidance": [
+    "Zenless Zone Zero (custom-zenless-zone-zero): Zenless Zone Zero isn't in Melty's catalog yet, so Melty has no game-specific loader or version configuration for it. An installed game returned by search_games with a custom- slug can be the host (role \"primary\") or a required companion (role \"companion\"). Melty finds its folder in the player's installed games by its name, checks that the folder exists, and stops with an installation prompt if it is missing. Use {game} for the host's folder and {game:<slug>} for a companion in file mappings, launch arguments or environment variables. launch kind \"game\" starts the host through its detected store; an exe launch can name {game}/<actual executable>. Inspect the installed game to choose the real mod folders and executable; no loader configuration is supplied automatically. Keep the user's chosen host and window arrangement; catalog absence is not a reason to swap the games. Read Zenless Zone Zero's real content from its folder; don't replace it with look-alikes or label a required game \"secondary\". For a disc or ROM, describe the player's own copy with ownCopies instead."
+  ]
+}

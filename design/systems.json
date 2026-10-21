@@ -1,6 +1,6 @@
 {
   "project": "Fortnite × New Eridu",
-  "status": "development_tooling_ready_runtime_blocked",
+  "status": "documented_routes_investigated_runtime_blocked",
   "systems": [
     {
       "id": "host",
@@ -9,7 +9,13 @@
       "integration": null,
       "verification": "Melty confirms custom primary is supported, but provides no ZZZ loader; local host integration unverified",
       "depends_on": [],
-      "evidence": []
+      "evidence": [],
+      "candidate_routes": [
+        "zzmi",
+        "bepinex",
+        "melonloader",
+        "official-zzz-sdk"
+      ]
     },
     {
       "id": "companion",
@@ -20,58 +26,55 @@
       "depends_on": [
         "host"
       ],
-      "evidence": []
-    },
-    {
-      "id": "cooperation",
-      "game": "Zenless Zone Zero",
-      "role": "gameplay",
-      "integration": null,
-      "verification": "Transport, player capacity, host and join behavior unresolved",
-      "depends_on": [
-        "host",
-        "companion"
-      ],
-      "evidence": []
+      "evidence": [],
+      "candidate_routes": [
+        "fortnite-files",
+        "fortnite-uefn",
+        "fortnite-data-api",
+        "fortnite-overwolf"
+      ]
     },
     {
       "id": "missions",
       "game": "Zenless Zone Zero",
       "role": "gameplay",
       "integration": null,
-      "verification": "Mission hooks and shared progression unverified",
+      "verification": "Single-player mission hooks, real companion contribution and completion unverified",
       "depends_on": [
-        "host",
-        "cooperation"
+        "host"
       ],
-      "evidence": []
+      "evidence": [],
+      "candidate_routes": []
     },
     {
       "id": "combat",
       "game": "Zenless Zone Zero",
       "role": "gameplay",
       "integration": null,
-      "verification": "Combat hooks and authority unverified",
+      "verification": "PvE encounter and defeat-event hooks inside ZZZ unverified",
       "depends_on": [
-        "host",
-        "cooperation"
+        "host"
       ],
-      "evidence": []
+      "evidence": [],
+      "candidate_routes": []
     },
     {
       "id": "loot",
       "game": "Zenless Zone Zero",
       "role": "gameplay",
       "integration": null,
-      "verification": "Drop hooks, ownership and persistence unverified",
+      "verification": "Single-player reward hooks and duplicate prevention unverified",
       "depends_on": [
         "missions",
         "combat"
       ],
-      "evidence": []
+      "evidence": [],
+      "candidate_routes": []
     }
   ],
   "license": "MIT",
   "allow_remix": true,
-  "publication_allowed": false
+  "publication_allowed": false,
+  "mode": "single-player",
+  "player_count": 1
 }

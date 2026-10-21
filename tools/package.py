@@ -9,6 +9,8 @@ from tools.generate_contracts import generate
 
 ROOT = Path(__file__).resolve().parents[1]
 FILES = ['README.md', 'LICENSE', '.gitignore', 'design/systems.json',
+         'design/routes.json', 'research/routes.md', 'research/route-sources.json',
+         'design/missions.json', 'design/acceptance.json',
          'research/feasibility.md', 'tools/preflight.py', 'tools/package.py',
          'tools/generate_contracts.py', 'tools/Inspect-LocalGames.ps1',
          'new_eridu/__init__.py', 'new_eridu/contracts.py',
@@ -22,7 +24,11 @@ def package(root, destination):
     manifest = {'kind': 'development-source-only', 'playable': False,
                 'integration_verified': False, 'release_allowed': False,
                 'license': 'MIT', 'allow_remix': True,
-                'preflight_issues': validate(sheet),
+                'mode': sheet['mode'], 'player_count': sheet['player_count'],
+                'preflight_issues': validate(sheet,
+                    json.loads((root / 'design/routes.json').read_text()),
+                    json.loads((root / 'design/missions.json').read_text()),
+                    json.loads((root / 'design/acceptance.json').read_text())),
                 'sha256': {name: hashlib.sha256(data).hexdigest() for name, data in files.items()}}
     files['MANIFEST.json'] = json.dumps(manifest, sort_keys=True, indent=2).encode()
     destination.parent.mkdir(parents=True, exist_ok=True)

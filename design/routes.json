@@ -1,0 +1,160 @@
+{
+  "selected": {
+    "host": null,
+    "companion": null
+  },
+  "routes": [
+    {
+      "id": "zzmi",
+      "side": "host",
+      "scope": "visual-rendering",
+      "sources": [
+        "xxmi",
+        "xxmi-zzmi-code",
+        "zzmi-master",
+        "3dmigoto",
+        "routes-zzz"
+      ],
+      "steam_verified": false,
+      "permitted": null,
+      "melty_one_click_verified": false,
+      "runtime_evidence": [],
+      "capabilities": [
+        "visual"
+      ],
+      "blockers": [
+        "No documented single-player mission/PvE/loot API",
+        "Steam launch enum is not verified Steam execution",
+        "Melty supplies no ZZZ loader",
+        "Publisher permission not established",
+        "Optional game-settings write conflicts with no-change requirement"
+      ]
+    },
+    {
+      "id": "bepinex",
+      "side": "host",
+      "scope": "generic-unity-plugin",
+      "sources": [
+        "bepinex",
+        "routes-zzz"
+      ],
+      "steam_verified": false,
+      "permitted": null,
+      "melty_one_click_verified": false,
+      "runtime_evidence": [],
+      "capabilities": [],
+      "blockers": [
+        "No verified ZZZ/Steam compatibility or permitted load route",
+        "Generic Unity support does not establish mission, PvE or loot hooks"
+      ]
+    },
+    {
+      "id": "melonloader",
+      "side": "host",
+      "scope": "generic-unity-plugin",
+      "sources": [
+        "melon",
+        "routes-zzz"
+      ],
+      "steam_verified": false,
+      "permitted": null,
+      "melty_one_click_verified": false,
+      "runtime_evidence": [],
+      "capabilities": [],
+      "blockers": [
+        "No verified ZZZ/Steam compatibility or permitted load route"
+      ]
+    },
+    {
+      "id": "official-zzz-sdk",
+      "side": "host",
+      "scope": "official-extension-sdk",
+      "sources": [
+        "routes-zzz"
+      ],
+      "steam_verified": false,
+      "permitted": null,
+      "melty_one_click_verified": false,
+      "runtime_evidence": [],
+      "capabilities": [],
+      "blockers": [
+        "No official ZZZ gameplay extension SDK identified in consulted sources"
+      ]
+    },
+    {
+      "id": "fortnite-files",
+      "side": "companion",
+      "scope": "local-content",
+      "sources": [
+        "routes-fortnite"
+      ],
+      "steam_verified": false,
+      "permitted": null,
+      "melty_one_click_verified": false,
+      "runtime_evidence": [],
+      "capabilities": [],
+      "blockers": [
+        "IoStore encrypted; excluded from implementation"
+      ]
+    },
+    {
+      "id": "fortnite-uefn",
+      "side": "companion",
+      "scope": "official-island-authoring-candidate",
+      "sources": [
+        "uefn",
+        "analytics"
+      ],
+      "steam_verified": false,
+      "permitted": null,
+      "melty_one_click_verified": false,
+      "runtime_evidence": [],
+      "capabilities": [],
+      "blockers": [
+        "Documentation inaccessible",
+        "No external event bridge verified",
+        "Would run gameplay in Fortnite, not host code inside ZZZ",
+        "No ZZZ receiver exists"
+      ]
+    },
+    {
+      "id": "fortnite-data-api",
+      "side": "companion",
+      "scope": "public-statistics-candidate",
+      "sources": [
+        "data-api"
+      ],
+      "steam_verified": false,
+      "permitted": null,
+      "melty_one_click_verified": false,
+      "runtime_evidence": [],
+      "capabilities": [],
+      "blockers": [
+        "Documentation inaccessible",
+        "Per-player live events not established",
+        "Aggregate metrics alone do not prove this player plays Fortnite",
+        "Melty acceptance and required-copy linkage unverified"
+      ]
+    },
+    {
+      "id": "fortnite-overwolf",
+      "side": "companion",
+      "scope": "external-event-provider-candidate",
+      "sources": [
+        "overwolf"
+      ],
+      "steam_verified": false,
+      "permitted": null,
+      "melty_one_click_verified": false,
+      "runtime_evidence": [],
+      "capabilities": [],
+      "blockers": [
+        "Documentation inaccessible",
+        "Exact Fortnite event coverage and permitted use unverified",
+        "Runtime distribution and one-click prerequisites unverified",
+        "No ZZZ receiver exists"
+      ]
+    }
+  ],
+  "mode": "single-player"
+}

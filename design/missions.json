@@ -1,0 +1,34 @@
+{
+  "mode": "single-player",
+  "missions": [
+    {
+      "id": "first-solo-pve",
+      "status": "specification-only",
+      "system_refs": [
+        "host",
+        "companion",
+        "missions",
+        "combat",
+        "loot"
+      ],
+      "objective": "Complete one verified PvE encounter in ZZZ whose mission uses a real Fortnite contribution.",
+      "completion_count": 1,
+      "host_mission_hook": null,
+      "pve_event_hook": null,
+      "fortnite_contribution": null,
+      "loot_hook": null,
+      "reward_definition": null,
+      "duplicate_reward_policy": "at-most-once per mission completion",
+      "acceptance_refs": [
+        "host-runtime",
+        "real-companion",
+        "solo-mission",
+        "pve-combat",
+        "loot",
+        "allowed-install",
+        "real-evidence"
+      ],
+      "runtime_evidence": []
+    }
+  ]
+}

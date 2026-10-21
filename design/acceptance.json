@@ -1,0 +1,61 @@
+{
+  "mode": "single-player",
+  "player_count": 1,
+  "excluded_requirements": [
+    "multiplayer",
+    "player-cooperation",
+    "network-synchronization",
+    "own-servers"
+  ],
+  "criteria": [
+    {
+      "id": "host-runtime",
+      "required": true,
+      "description": "Code executes through a permitted route inside the real installed ZZZ Steam workflow.",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "real-companion",
+      "required": true,
+      "description": "Actual Fortnite content or events influence the mission, with provenance; no encrypted files or client modification.",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "solo-mission",
+      "required": true,
+      "description": "One player can accept, advance and complete the mission inside ZZZ.",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "pve-combat",
+      "required": true,
+      "description": "Completion responds to an actual PvE encounter event from ZZZ, not a synthetic event.",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "loot",
+      "required": true,
+      "description": "One completion grants the specified real reward once; duplicate completion does not duplicate loot.",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "allowed-install",
+      "required": true,
+      "description": "Installed-game versions, permission and one-click Melty installation verified without bypassing protections.",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "real-evidence",
+      "required": true,
+      "description": "Current-version integration run, provenance and gameplay evidence reviewed.",
+      "status": "pending",
+      "evidence": []
+    }
+  ]
+}

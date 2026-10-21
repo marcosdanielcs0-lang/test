@@ -1,0 +1,85 @@
+{
+  "checked_at": "2026-10-21",
+  "sources": [
+    {
+      "id": "xxmi",
+      "url": "https://raw.githubusercontent.com/SpectrumQT/XXMI-Launcher/main/README.md",
+      "retrieval": "read",
+      "sha256_of_retrieved_text": "ae55064308f7af256e9470e3758373eeeb7149f3d688e76cad9e7d2e7ecd74df",
+      "finding": "Launcher manages model importers; GPLv3; install flow alone is not gameplay support."
+    },
+    {
+      "id": "xxmi-zzmi-code",
+      "url": "https://raw.githubusercontent.com/SpectrumQT/XXMI-Launcher/main/src/xxmi_launcher/core/packages/model_importers/zzmi_package.py",
+      "retrieval": "read",
+      "sha256_of_retrieved_text": "f593c04d30504218250bd7d13cdfef70affdc34b40341b56db1c046d160438e7",
+      "finding": "ZZMI configuration uses InjectMode.HOOK; rendering settings; launch enum includes STEAM; optional game configuration writes GENERAL_DATA.bin. No Steam runtime test performed."
+    },
+    {
+      "id": "zzmi-master",
+      "url": "https://raw.githubusercontent.com/leotorrez/ZZMI-Package/master/README.md",
+      "retrieval": "read",
+      "sha256_of_retrieved_text": "486759f5b6d15b44905fdaf0c0afa69ce6b26aa07fa523a4d15ca35fcb2b4d6f",
+      "finding": "README is titled Wuthering Waves Model Importer and describes WWMI; inconsistent with repository name, not evidence for ZZZ installation or Steam compatibility."
+    },
+    {
+      "id": "3dmigoto",
+      "url": "https://raw.githubusercontent.com/bo3b/3Dmigoto/master/README.md",
+      "retrieval": "read",
+      "sha256_of_retrieved_text": "33479e5667c97074a5e6e14ee18357d0f51b15f8a915954e5fddaf6d1e4f5fe4",
+      "finding": "DX11 wrapper and rendering modding tool; no documented mission authority or multiplayer API in this README."
+    },
+    {
+      "id": "bepinex",
+      "url": "https://raw.githubusercontent.com/BepInEx/BepInEx/master/README.md",
+      "retrieval": "read",
+      "sha256_of_retrieved_text": "44bc6ec2dbb0b4192fd4a98d21aebb1925504574d9686e74bdd8698f3869417d",
+      "finding": "General Unity plugin framework for Mono and IL2CPP; not a ZZZ-specific compatibility guarantee."
+    },
+    {
+      "id": "melon",
+      "url": "https://raw.githubusercontent.com/LavaGang/MelonLoader/master/README.md",
+      "retrieval": "read",
+      "sha256_of_retrieved_text": "9f498724b83a7cac6c9aa78cc5134bdaa1a7fb8dbf78f958e884cc7b5027528b",
+      "finding": "General loader with Plugins/Mods installation locations; not proof of permitted ZZZ gameplay integration."
+    },
+    {
+      "id": "uefn",
+      "url": "https://dev.epicgames.com/documentation/en-us/fortnite/unreal-editor-for-fortnite-documentation",
+      "retrieval": "blocked_proxy_403",
+      "finding": "Document not read; capabilities, terms and transport remain unverified."
+    },
+    {
+      "id": "analytics",
+      "url": "https://dev.epicgames.com/documentation/en-us/fortnite/using-analytics-devices-in-fortnite-creative",
+      "retrieval": "blocked_proxy_403",
+      "finding": "Document not read; capabilities, terms and transport remain unverified."
+    },
+    {
+      "id": "data-api",
+      "url": "https://dev.epicgames.com/documentation/en-us/fortnite/fortnite-data-api-overview",
+      "retrieval": "blocked_proxy_403",
+      "finding": "Document not read; capabilities, terms and transport remain unverified."
+    },
+    {
+      "id": "overwolf",
+      "url": "https://dev.overwolf.com/ow-native/live-game-data-gep/supported-games/fortnite/",
+      "retrieval": "blocked_proxy_403",
+      "finding": "Document not read; capabilities, terms and transport remain unverified."
+    },
+    {
+      "id": "routes-zzz",
+      "source": "Melty game_info",
+      "slug": "custom-zenless-zone-zero",
+      "retrieval": "read",
+      "finding": "No ZZZ loader/version configuration"
+    },
+    {
+      "id": "routes-fortnite",
+      "source": "Melty game_info",
+      "slug": "fortnite",
+      "retrieval": "read",
+      "finding": "No Fortnite loader; no client mods; encrypted IoStore must not be read or replaced"
+    }
+  ]
+}
