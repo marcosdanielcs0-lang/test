@@ -1,0 +1,48 @@
+{
+  "source": "Melty MCP",
+  "tool_result": "mashups-zzz",
+  "checked_at": "2026-10-21",
+  "data": {
+    "mashups": [
+      {
+        "slug": "zenless-r-e-p-o",
+        "title": "Zenless R.E.P.O.",
+        "tagline": "WIP — temporarily broken, do not play yet",
+        "creator": "[public creator name omitted]",
+        "games": [
+          "repo",
+          "custom-zenless-zone-zero"
+        ],
+        "version": "0.2.7",
+        "players": 11,
+        "multiplayer": true,
+        "allowRemix": true,
+        "source": null,
+        "remixOf": null,
+        "remixes": 0,
+        "pageUrl": "https://melty.gg/m/zenless-r-e-p-o"
+      },
+      {
+        "slug": "new-eridu-combat-gallery",
+        "title": "New Eridu Combat Gallery",
+        "tagline": "Nero's demon defeats unlock artwork from your installed ZZZ copy.",
+        "creator": "[public creator name omitted]",
+        "games": [
+          "devil-may-cry-5",
+          "custom-zenless-zone-zero"
+        ],
+        "version": "0.1.5",
+        "players": 2,
+        "multiplayer": false,
+        "allowRemix": false,
+        "source": null,
+        "remixOf": null,
+        "remixes": 0,
+        "pageUrl": "https://melty.gg/m/new-eridu-combat-gallery"
+      }
+    ],
+    "gameSlugs": [
+      "custom-zenless-zone-zero"
+    ]
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "source": "Melty MCP",
+  "tool_result": "example-lockercraft",
+  "checked_at": "2026-10-21",
+  "data": {
+    "slug": "lockercraft",
+    "title": "LockerCraft",
+    "tagline": "Be your Fortnite character in Minecraft: outfits, emotes and pickaxes from your own Fortnite install, plus Fortnite building and editing.",
+    "creator": "[public creator name omitted]",
+    "games": [
+      "minecraft-java",
+      "fortnite"
+    ],
+    "version": "0.1.0",
+    "players": 1371,
+    "multiplayer": true,
+    "allowRemix": true,
+    "source": null,
+    "remixOf": null,
+    "remixes": 0,
+    "id": "834c3fd9-93d9-4350-b40e-659c83478b81",
+    "recipe": {
+      "mode": "installed",
+      "test": {
+        "checks": [
+          "bridge-ready",
+          "outfit-renders",
+          "emote-plays",
+          "builds",
+          "edits"
+        ],
+        "minutes": 6
+      },
+      "games": [
+        {
+          "role": "primary",
+          "slug": "minecraft-java"
+        },
+        {
+          "role": "companion",
+          "slug": "fortnite"
+        }
+      ],
+      "launch": {
+        "args": [
+          "--launch",
+          "LockerCraft"
+        ],
+        "kind": "exe",
+        "path": "{localappdata}/LockerCraft/Prism/prismlauncher.exe"
+      },
+      "mappings": [
+        {
+          "to": "{localappdata}/LockerCraft",
+          "from": "",
+          "component": "main"
+        }
+      ],
+      "settings": [
+        {
+          "set": {
+            "fortnite_dir": "{game:fortnite}"
+          },
+          "file": "{localappdata}/LockerCraft/Prism/instances/LockerCraft/.minecraft/config/lockercraft.properties"
+        }
+      ],
+      "components": [
+        {
+          "id": "main",
+          "kind": "main",
+          "label": "LockerCraft",
+          "fileName": "LockerCraft-0.1.0.zip",
+          "required": true
+        }
+      ],
+      "multiplayer": {
+        "connect": {
+          "address": {
+            "log": "{localappdata}/LockerCraft/melty.log",
+            "after": "Melty join address: "
+          },
+          "joinFile": {
+            "key": "join",
+            "path": "{localappdata}/LockerCraft/melty.properties"
+          }
+        },
+        "maxPlayers": 8
+      },
+      "runtimeData": [
+        "{localappdata}/LockerCraft"
+      ],
+      "requirements": [],
+      "schemaVersion": 1
+    },
+    "recipeWithheld": null,
+    "pageUrl": "https://melty.gg/m/lockercraft",
+    "oneClick": {
+      "oneClick": "yes",
+      "needs": [
+        "Minecraft: Java Edition",
+        "Fortnite"
+      ],
+      "automatic": [],
+      "byHand": [],
+      "someByHand": [],
+      "notes": [],
+      "blockers": [],
+      "toFinish": []
+    },
+    "outcomes": {
+      "days": 30,
+      "installed": 1391,
+      "launched": 1553,
+      "failed": 227,
+      "uninstalled": 281,
+      "failures": [
+        {
+          "reason": "download-failed: Download failed (544).",
+          "count": 25,
+          "lastAt": "2026-10-13T19:00:12.103Z",
+          "gameVersions": [
+            "1.12.2",
+            "1.21.11",
+            "1.21.10",
+            "26.1.2"
+          ]
+        },
+        {
+          "reason": "game-missing: Install Fortnite to use this mod.",
+          "count": 9,
+          "lastAt": "2026-10-13T20:57:59.395Z",
+          "gameVersions": [
+            "1.21.1",
+            "1.12.2",
+            "1.16.5",
+            "1.20"
+          ]
+        },
+        {
+          "reason": "game-missing: Install Minecraft: Java Edition to use this mod.",
+          "count": 7,
+          "lastAt": "2026-10-13T21:46:17.065Z",
+          "gameVersions": [
+            "6.0.0.0"
+          ]
+        },
+        {
+          "reason": "join-waiting: Waiting for the host's game to open.",
+          "count": 6,
+          "lastAt": "2026-10-15T00:32:29.823Z",
+          "gameVersions": [
+            "1.21.10",
+            "1.20.1",
+            "1.21.3",
+            "1.21.6"
+          ]
+        },
+        {
+          "reason": "disk-full: There isn't enough free space on C:. Free up 0.1 GB, then press Try again.",
+          "count": 5,
+          "lastAt": "2026-10-20T18:25:55.323Z",
+          "gameVersions": [
+            "1.0",
+            "1.12.2",
+            "1.19.2",
+            "1.19.4"
+          ]
+        },
+        {
+          "reason": "disk-full: There isn't enough free space on C:. Free up 0.4 GB, then press Try again.",
+          "count": 5,
+          "lastAt": "2026-10-20T12:44:03.428Z",
+          "gameVersions": [
+            "1.20.1",
+            "1.21.1",
+            "1.21.10",
+            "1.21.11"
+          ]
+        },
+        {
+          "reason": "disk-full: There isn't enough free space on C:. Free up 0.2 GB, then press Try again.",
+          "count": 5,
+          "lastAt": "2026-10-15T01:21:35.698Z",
+          "gameVersions": [
+            "1.19.2",
+            "1.19.4",
+            "1.21.10",
+            "1.21.6"
+          ]
+        },
+        {
+          "reason": "disk-full: There isn't enough free space on C:. Free up 0.5 GB, then press Try again.",
+          "count": 2,
+          "lastAt": "2026-10-13T15:14:39.489Z",
+          "gameVersions": [
+            "1.20.1",
+            "1.21.10"
+          ]
+        }
+      ],
+      "plays": [
+        {
+          "version": "0.1.0",
+          "started": 1213,
+          "worked": 1139,
+          "crashed": 17,
+          "codeSeen": 945
+        }
+      ],
+      "crashes": [
+        {
+          "version": "0.1.0",
+          "where": "FortBridge.exe",
+          "kind": "crashed",
+          "players": 6,
+          "medianSeconds": 724
+        },
+        {
+          "version": "0.1.0",
+          "where": "javaw.exe",
+          "kind": "hung",
+          "players": 6,
+          "medianSeconds": 377
+        },
+        {
+          "version": "0.1.0",
+          "where": "KERNELBASE.dll",
+          "kind": "crashed",
+          "players": 2,
+          "medianSeconds": 152
+        },
+        {
+          "version": "0.1.0",
+          "where": "OpenAL.dll",
+          "kind": "crashed",
+          "players": 2,
+          "medianSeconds": 688
+        },
+        {
+          "version": "0.1.0",
+          "where": "prismlauncher.exe",
+          "kind": "hung",
+          "players": 1,
+          "medianSeconds": 64
+        }
+      ],
+      "ratings": {
+        "count": 48,
+        "average": 2.7,
+        "reasons": {
+          "not-fun": 7,
+          "didnt-start": 3,
+          "smooth": 1,
+          "laggy": 1
+        }
+      },
+      "gameVersions": [
+        {
+          "gameVersion": "1.21.11",
+          "installed": 154,
+          "launched": 129,
+          "failed": 5
+        },
+        {
+          "gameVersion": "26.2",
+          "installed": 129,
+          "launched": 120,
+          "failed": 4
+        },
+        {
+          "gameVersion": "1.0",
+          "installed": 128,
+          "launched": 121,
+          "failed": 2
+        },
+        {
+          "gameVersion": "26.3",
+          "installed": 133,
+          "launched": 114,
+          "failed": 3
+        },
+        {
+          "gameVersion": "1.20.1",
+          "installed": 106,
+          "launched": 95,
+          "failed": 4
+        },
+        {
+          "gameVersion": "1.12.2",
+          "installed": 103,
+          "launched": 91,
+          "failed": 6
+        }
+      ],
+      "together": {
+        "connects": true,
+        "showsAddress": false,
+        "joinWithoutAddress": false,
+        "games": 1337,
+        "hosted": 1007,
+        "joiners": 88,
+        "handedAddress": 7,
+        "confirmed": 9,
+        "address": {
+          "log": "{localappdata}/LockerCraft/melty.log",
+          "after": "Melty join address: "
+        },
+        "hostChecks": {
+          "no-log": 22,
+          "old-log": 1,
+          "no-marker": 6,
+          "no-address": 0,
+          "not-listening": 0,
+          "shapes": []
+        }
+      }
+    }
+  }
+}

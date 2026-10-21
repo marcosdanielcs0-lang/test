@@ -1,0 +1,158 @@
+{
+  "source": "Melty MCP",
+  "tool_result": "mashups",
+  "checked_at": "2026-10-21",
+  "data": {
+    "mashups": [
+      {
+        "slug": "lockercraft",
+        "title": "LockerCraft",
+        "tagline": "Be your Fortnite character in Minecraft: outfits, emotes and pickaxes from your own Fortnite install, plus Fortnite building and editing.",
+        "creator": "[public creator name omitted]",
+        "games": [
+          "minecraft-java",
+          "fortnite"
+        ],
+        "version": "0.1.0",
+        "players": 1371,
+        "multiplayer": true,
+        "allowRemix": true,
+        "source": null,
+        "remixOf": null,
+        "remixes": 0,
+        "pageUrl": "https://melty.gg/m/lockercraft"
+      },
+      {
+        "slug": "fortcraft-2",
+        "title": "FortCraft",
+        "tagline": "Fortnite's real guns, building, emotes and bots in your Minecraft survival world, read from your own Fortnite install.",
+        "creator": "[public creator name omitted]",
+        "games": [
+          "minecraft-java",
+          "fortnite"
+        ],
+        "version": "0.1.0",
+        "players": 1168,
+        "multiplayer": false,
+        "allowRemix": false,
+        "source": null,
+        "remixOf": null,
+        "remixes": 0,
+        "pageUrl": "https://melty.gg/m/fortcraft-2"
+      },
+      {
+        "slug": "mineblox-royale",
+        "title": "Mineblox Royale",
+        "tagline": "A battle royale in Minecraft with a Roblox-style hub and Fortnite's rules: Battle Bus, storm, loot, building and bots, up to 100 a match.",
+        "creator": "[public creator name omitted]",
+        "games": [
+          "minecraft-java",
+          "roblox",
+          "fortnite"
+        ],
+        "version": "1.2.0",
+        "players": 873,
+        "multiplayer": true,
+        "allowRemix": false,
+        "source": "https://github.com/Pixelplayz2215/MinebloxRoyale",
+        "remixOf": null,
+        "remixes": 0,
+        "pageUrl": "https://melty.gg/m/mineblox-royale"
+      },
+      {
+        "slug": "stormcraft-gta-story-mode-prot-3",
+        "title": "Stormcraft GTA Story Mode prot",
+        "tagline": "",
+        "creator": "[public creator name omitted]",
+        "games": [
+          "gta-v",
+          "fortnite"
+        ],
+        "version": "1.0.0",
+        "players": 621,
+        "multiplayer": false,
+        "allowRemix": true,
+        "source": null,
+        "remixOf": null,
+        "remixes": 0,
+        "pageUrl": "https://melty.gg/m/stormcraft-gta-story-mode-prot-3"
+      },
+      {
+        "slug": "rednite",
+        "title": "RedNite",
+        "tagline": "Fortnite Battle Royale inside Red Dead Redemption 2: Arthur vs 99 RDR2 legends, with building, the Battle Bus and the storm.",
+        "creator": "[public creator name omitted]",
+        "games": [
+          "red-dead-redemption-2",
+          "fortnite"
+        ],
+        "version": "0.2.14",
+        "players": 135,
+        "multiplayer": false,
+        "allowRemix": true,
+        "source": null,
+        "remixOf": null,
+        "remixes": 0,
+        "pageUrl": "https://melty.gg/m/rednite"
+      },
+      {
+        "slug": "battle-royale-tag",
+        "title": "Battle Royale Tag",
+        "tagline": "Fortnite's storm, guns, building and armed Training Dummies in Gorilla Tag's forest, read from your own Fortnite. Get the Victory Royale.",
+        "creator": "[public creator name omitted]",
+        "games": [
+          "custom-gorilla-tag",
+          "fortnite"
+        ],
+        "version": "1.3.0",
+        "players": 120,
+        "multiplayer": false,
+        "allowRemix": false,
+        "source": null,
+        "remixOf": null,
+        "remixes": 0,
+        "pageUrl": "https://melty.gg/m/battle-royale-tag"
+      },
+      {
+        "slug": "locker-drop",
+        "title": "Locker Drop",
+        "tagline": "Your real Fortnite play unlocks skate. — gear, parks, the whole map.",
+        "creator": "[public creator name omitted]",
+        "games": [
+          "skate",
+          "fortnite"
+        ],
+        "version": "1.0.0",
+        "players": 80,
+        "multiplayer": false,
+        "allowRemix": true,
+        "source": null,
+        "remixOf": null,
+        "remixes": 0,
+        "pageUrl": "https://melty.gg/m/locker-drop"
+      },
+      {
+        "slug": "loot-galaxy",
+        "title": "Loot Galaxy",
+        "tagline": "Fortnite's Chug Jugs, Shield Potions and gold Pump Shotguns turn up in No Man's Sky crates, read from your own Fortnite install.",
+        "creator": "[public creator name omitted]",
+        "games": [
+          "no-mans-sky",
+          "fortnite"
+        ],
+        "version": "0.1.0",
+        "players": 20,
+        "multiplayer": false,
+        "allowRemix": false,
+        "source": null,
+        "remixOf": null,
+        "remixes": 0,
+        "pageUrl": "https://melty.gg/m/loot-galaxy"
+      }
+    ],
+    "gameSlugs": [
+      "custom-zenless-zone-zero",
+      "fortnite"
+    ]
+  }
+}

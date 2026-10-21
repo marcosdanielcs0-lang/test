@@ -1,0 +1,15 @@
+{
+  "source": "Melty MCP",
+  "tool_result": "search-zzz",
+  "checked_at": "2026-10-21",
+  "data": {
+    "games": [],
+    "others": [
+      {
+        "slug": "custom-zenless-zone-zero",
+        "name": "Zenless Zone Zero",
+        "steamAppId": "4162040"
+      }
+    ]
+  }
+}

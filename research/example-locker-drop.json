@@ -1,0 +1,144 @@
+{
+  "source": "Melty MCP",
+  "tool_result": "example-locker-drop",
+  "checked_at": "2026-10-21",
+  "data": {
+    "slug": "locker-drop",
+    "title": "Locker Drop",
+    "tagline": "Your real Fortnite play unlocks skate. — gear, parks, the whole map.",
+    "creator": "[public creator name omitted]",
+    "games": [
+      "skate",
+      "fortnite"
+    ],
+    "version": "1.0.0",
+    "players": 80,
+    "multiplayer": false,
+    "allowRemix": true,
+    "source": null,
+    "remixOf": null,
+    "remixes": 0,
+    "id": "18f3caba-0a02-497b-a5fa-6f4ae6b341c2",
+    "recipe": {
+      "mode": "installed",
+      "test": {
+        "checks": [
+          "locker-drop-applied"
+        ],
+        "minutes": 3
+      },
+      "games": [
+        {
+          "role": "primary",
+          "slug": "skate"
+        },
+        {
+          "role": "companion",
+          "slug": "fortnite"
+        }
+      ],
+      "launch": {
+        "env": {
+          "LOCKERDROP_FORTNITE_DIR": "{game:fortnite}"
+        },
+        "kind": "exe",
+        "path": "{game}/FortniteLockerDrop.exe"
+      },
+      "mappings": [
+        {
+          "to": "{game}",
+          "from": "",
+          "component": "main"
+        }
+      ],
+      "components": [
+        {
+          "id": "main",
+          "kind": "main",
+          "label": "Locker Drop + ReSkate runtime",
+          "fileName": "LockerDrop-1.0.0.zip",
+          "required": true
+        }
+      ],
+      "runtimeData": [
+        "{localappdata}/ReSkate"
+      ],
+      "requirements": [],
+      "schemaVersion": 1
+    },
+    "recipeWithheld": null,
+    "pageUrl": "https://melty.gg/m/locker-drop",
+    "oneClick": {
+      "oneClick": "yes",
+      "needs": [
+        "skate.",
+        "Fortnite"
+      ],
+      "automatic": [],
+      "byHand": [],
+      "someByHand": [],
+      "notes": [],
+      "blockers": [],
+      "toFinish": []
+    },
+    "outcomes": {
+      "days": 30,
+      "installed": 81,
+      "launched": 127,
+      "failed": 5,
+      "uninstalled": 12,
+      "failures": [
+        {
+          "reason": "folder-protected: Windows only lets administrators change files in skate.'s folder.",
+          "count": 2,
+          "lastAt": "2026-10-17T15:55:53.953Z",
+          "gameVersions": [
+            "1.0.0.0"
+          ]
+        },
+        {
+          "reason": "game-installing: skate. is still updating. Play once it's done.",
+          "count": 1,
+          "lastAt": "2026-10-17T18:11:30.575Z",
+          "gameVersions": [
+            "1.0.0.0"
+          ]
+        },
+        {
+          "reason": "disk-full: There isn't enough free space on C:. Free up 0.2 GB, then press Try again.",
+          "count": 1,
+          "lastAt": "2026-10-16T15:09:54.140Z",
+          "gameVersions": [
+            "1.0.0.0"
+          ]
+        }
+      ],
+      "plays": [
+        {
+          "version": "1.0.0",
+          "started": 68,
+          "worked": 27,
+          "crashed": 0,
+          "codeSeen": 7
+        }
+      ],
+      "crashes": [],
+      "ratings": {
+        "count": 2,
+        "average": 1,
+        "reasons": {
+          "didnt-start": 1
+        }
+      },
+      "gameVersions": [
+        {
+          "gameVersion": "1.0.0.0",
+          "installed": 80,
+          "launched": 67,
+          "failed": 4
+        }
+      ],
+      "together": null
+    }
+  }
+}

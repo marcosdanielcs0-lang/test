@@ -1,0 +1,24 @@
+{
+  "source": "Melty MCP",
+  "tool_result": "search-fortnite",
+  "checked_at": "2026-10-21",
+  "data": {
+    "games": [
+      {
+        "slug": "fortnite",
+        "name": "Fortnite",
+        "engine": "unreal",
+        "loaders": [],
+        "modFolders": {},
+        "sellPolicy": "review"
+      }
+    ],
+    "others": [
+      {
+        "slug": "custom-save-the-world",
+        "name": "Save The World",
+        "steamAppId": "2280370"
+      }
+    ]
+  }
+}

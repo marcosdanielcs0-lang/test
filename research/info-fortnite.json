@@ -1,0 +1,136 @@
+{
+  "source": "Melty MCP",
+  "tool_result": "info-fortnite",
+  "checked_at": "2026-10-21",
+  "data": {
+    "slug": "fortnite",
+    "name": "Fortnite",
+    "engine": "unreal",
+    "loaders": [],
+    "modFolders": {},
+    "sellPolicy": "review",
+    "aliases": [
+      "fortnite",
+      "fortnite battle royale"
+    ],
+    "exe": [
+      "FortniteGame/Binaries/Win64/FortniteClient-Win64-Shipping.exe"
+    ],
+    "baseFiles": [],
+    "sellPolicyNote": "Online game with anti-cheat; client mods can get players banned, so sales need review.",
+    "comesWith": [],
+    "oneClickLoaders": [],
+    "engineNotes": [
+      {
+        "topic": "safety",
+        "title": "Safety",
+        "lines": [
+          "Anti-cheat: Easy Anti-Cheat. Melty installs no loader for this game and never mods its client, so in a mashup it is only a companion: its content is read from the player's own installed copy while they play the other (moddable) game, and it is never launched with a mod — so there is no anti-cheat exposure and no account risk. Build the mashup in the moddable game."
+        ]
+      },
+      {
+        "topic": "content",
+        "title": "What a mashup can't use",
+        "lines": [
+          "Agents building on it found its game content (IoStore containers, .utoc/.ucas) encrypted (Oct 2026): plan nothing that reads or replaces it, and don't promise it to the creator."
+        ]
+      },
+      {
+        "topic": "players",
+        "title": "Players in a session",
+        "lines": [
+          "From a UE4SS Lua mod, FindFirstOf(\"GameStateBase\") gives the game state, and its PlayerArray lists a PlayerState per player: GetPlayerName(), PlayerId and UniqueId.",
+          "PlayerId is the same number on every client in the session. UniqueId's text carries the platform id (a 17-digit SteamID64) on some builds only, so fall back to PlayerId.",
+          "GameStateBase:GetServerWorldTimeSeconds() is the server's clock, the same on every client: use it to line players up in time.",
+          "UEHelpers.GetGameplayStatics():GetCurrentLevelName(playerController, true) gives the map.",
+          "This reader was written with no record of a run on a shipped game: confirm each read in the game."
+        ]
+      },
+      {
+        "topic": "camera",
+        "title": "Camera",
+        "lines": [
+          "UEHelpers.GetPlayerController() (or FindFirstOf(\"PlayerController\")), then its PlayerCameraManager: GetCameraLocation(), GetCameraRotation() and GetFOVAngle(). Lua gets no view matrix.",
+          "Left-handed with Z up, in centimetres: X is forward, Y is right. The field of view is horizontal unless the game changes its aspect-ratio constraint.",
+          "Without UE4SS, a native plugin can walk GWorld, OwningGameInstance, LocalPlayers[0], PlayerController, PlayerCameraManager, then the cached camera view. Positions are doubles on UE5 and floats on UE4."
+        ]
+      },
+      {
+        "topic": "controls",
+        "title": "Key bindings and input",
+        "lines": [
+          "UE5 games (Enhanced Input) keep bindings in assets, not a file: read playerController.PlayerInput.EnhancedActionMappings, and poll GetActionValue(action) each frame for what is pressed.",
+          "Older games: StaticFindObject(\"/Script/Engine.InputSettings\"):GetCDO() has ActionMappings and AxisMappings, and the file is {localappdata}/<Project>/Saved/Config/Windows/Input.ini (or WindowsNoEditor, WinGDK), lines like +ActionMappings=(ActionName=\"Jump\",...,Key=SpaceBar).",
+          "Reading bindings this way was never run on a shipped game."
+        ]
+      },
+      {
+        "topic": "gotchas",
+        "title": "Worth knowing",
+        "lines": [
+          "Read the engine on the game thread (LoopInGameThreadAfterFrames, LoopInGameThreadWithDelay, or ExecuteInGameThread) and wrap each read in pcall: an error inside a LoopAsync callback silently ends the loop.",
+          "FindFirstOf(\"PlayerController\") finds nothing on the main menu, and never returns class defaults.",
+          "RegisterHook can't hook delegate functions or C++ virtuals, so poll instead of hooking input handlers or the viewport's render.",
+          "UE4SS 3 mods go in ue4ss/Mods/<Name>/Scripts/main.lua with an enabled.txt in <Name>. UE 5.4 and later can need a newer experimental UE4SS than the one Melty installs, so prove the mod loads in the real game first.",
+          "UE4SS runs plain Lua 5.4: no FFI and no high-resolution clock."
+        ]
+      }
+    ],
+    "liveMashups": 12,
+    "failures": [
+      {
+        "reason": "folder-protected: Windows only lets administrators change files in Grand Theft Auto V Legacy's folder.",
+        "count": 45,
+        "lastAt": "2026-10-21T05:35:52.282Z",
+        "gameVersions": [
+          "1.0.3889.0",
+          "6.0.0.0",
+          "1.0.3788.0",
+          "1.0.3725.0"
+        ]
+      },
+      {
+        "reason": "download-failed: Download failed (544).",
+        "count": 38,
+        "lastAt": "2026-10-13T19:02:45.937Z",
+        "gameVersions": [
+          "1.21.11",
+          "1.12.2",
+          "1.0.3889.0",
+          "1.21.10"
+        ]
+      },
+      {
+        "reason": "game-missing: Install Fortnite to use this mod.",
+        "count": 22,
+        "lastAt": "2026-10-20T03:23:25.784Z",
+        "gameVersions": [
+          "1.0.3889.0",
+          "1.21.1",
+          "1.21.10",
+          "1.0"
+        ]
+      },
+      {
+        "reason": "game-missing: Install Grand Theft Auto V Legacy to use this mod.",
+        "count": 20,
+        "lastAt": "2026-10-13T22:50:56.330Z",
+        "gameVersions": [
+          "6.0.0.0",
+          "5.8.0.0"
+        ]
+      },
+      {
+        "reason": "join-waiting: Waiting for the host's game to open.",
+        "count": 14,
+        "lastAt": "2026-10-19T04:35:37.548Z",
+        "gameVersions": [
+          "26.2",
+          "26.3",
+          "1.21.10",
+          "1.21.11"
+        ]
+      }
+    ]
+  }
+}

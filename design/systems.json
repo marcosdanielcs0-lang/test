@@ -1,0 +1,77 @@
+{
+  "project": "Fortnite × New Eridu",
+  "status": "development_tooling_ready_runtime_blocked",
+  "systems": [
+    {
+      "id": "host",
+      "game": "Zenless Zone Zero",
+      "role": "primary",
+      "integration": null,
+      "verification": "Melty confirms custom primary is supported, but provides no ZZZ loader; local host integration unverified",
+      "depends_on": [],
+      "evidence": []
+    },
+    {
+      "id": "companion",
+      "game": "Fortnite",
+      "role": "companion",
+      "integration": null,
+      "verification": "Melty confirms encrypted IoStore and no client modding; examples expose directory bindings, not a reusable reader",
+      "depends_on": [
+        "host"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "cooperation",
+      "game": "Zenless Zone Zero",
+      "role": "gameplay",
+      "integration": null,
+      "verification": "Transport, player capacity, host and join behavior unresolved",
+      "depends_on": [
+        "host",
+        "companion"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "missions",
+      "game": "Zenless Zone Zero",
+      "role": "gameplay",
+      "integration": null,
+      "verification": "Mission hooks and shared progression unverified",
+      "depends_on": [
+        "host",
+        "cooperation"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "combat",
+      "game": "Zenless Zone Zero",
+      "role": "gameplay",
+      "integration": null,
+      "verification": "Combat hooks and authority unverified",
+      "depends_on": [
+        "host",
+        "cooperation"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "loot",
+      "game": "Zenless Zone Zero",
+      "role": "gameplay",
+      "integration": null,
+      "verification": "Drop hooks, ownership and persistence unverified",
+      "depends_on": [
+        "missions",
+        "combat"
+      ],
+      "evidence": []
+    }
+  ],
+  "license": "MIT",
+  "allow_remix": true,
+  "publication_allowed": false
+}
